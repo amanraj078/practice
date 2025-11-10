@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="inp" placeholder="enter text">
+    <button>See</button>
+    <p id="para">0</p>
+</body>
+<script>
+    let visible = true
+    let count = 0
+    const input = document.getElementById('inp')
+    document.querySelector("button").addEventListener("click", () => {
+        if (visible) {
+            input.type = "password"
+        } else {
+            input.type = "text"
+        }
+        visible = !visible
+    })
+
+    document.getElementById("inp").addEventListener("input", () => {
+        const inputValue = document.getElementById("inp").value
+        count = inputValue.length
+        document.getElementById("para").textContent = count
+
+    })
+</script>
+
+</html>

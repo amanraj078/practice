@@ -1,0 +1,57 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+select {
+  padding: 6px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #f3f3f3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button:last-child {
+  background: #ffdddd;
+  border-color: #dd8888;
+}
+
+span:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+li input[type="text"] {
+  flex: 1;
+}
