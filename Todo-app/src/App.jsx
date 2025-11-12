@@ -29,7 +29,7 @@ function App() {
     };
 
     const handleAdd = () => {
-        if (!todoText.trim()) return;
+        if (todoText.trim()) return;
         setTodos((prev) => [
             ...prev,
             {
